@@ -1,5 +1,6 @@
 package com.springmvccontroller;
 
+
 import java.util.List;
 
 import org.hibernate.SessionFactory;

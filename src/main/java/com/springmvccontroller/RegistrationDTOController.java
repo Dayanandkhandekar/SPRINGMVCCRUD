@@ -1,6 +1,7 @@
 
 package com.springmvccontroller;
 
+
 import java.util.List;
 
 import javax.persistence.Id;
@@ -11,6 +12,7 @@ import org.springframework.beans.propertyeditors.StringArrayPropertyEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -95,6 +97,8 @@ public class RegistrationDTOController {
     	
     	  System.out.println("Registeration=="+register);
     	  
+    	    int a=10/0;
+    	  
     	  service.addUser(register);
     	 // service.updateRegistrationDTO(0, register);
     	 // service.deleteRegistrationDTO(username);
@@ -132,7 +136,12 @@ public class RegistrationDTOController {
     	 
     }
    
-
+    @ExceptionHandler(Exception.class)
+    String getExceptionHandler() {
+    	System.out.println("Inside exception Handler");
+    	
+    	return "exception_handler";
+    }
 
 }
 

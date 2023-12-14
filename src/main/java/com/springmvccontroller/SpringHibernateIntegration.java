@@ -16,7 +16,6 @@ import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-
 @Configuration
 @EnableTransactionManagement
 @ComponentScan({ "com.springmvccontroller.*"})

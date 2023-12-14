@@ -8,6 +8,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+
 // ek class create karaych ani tya madhe
 //third way aahe yachya madhe registration  jsp page madhe name property la je name dile aahe te same name 
 // field la ghyaych 
