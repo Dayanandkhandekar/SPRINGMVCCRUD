@@ -97,7 +97,7 @@ public class RegistrationDTOController {
     	
     	  System.out.println("Registeration=="+register);
     	  
-    	    int a=10/0;
+    	  
     	  
     	  service.addUser(register);
     	 // service.updateRegistrationDTO(0, register);
