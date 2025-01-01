@@ -13,6 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class EmployeeController {
+	
 	@RequestMapping("/list")
 	ModelAndView employeeInfo() {
 	    List<Employee> employees = getEmployeeData();  
